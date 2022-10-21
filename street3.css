@@ -1,0 +1,114 @@
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+}
+
+#header{
+  background-image: url("./public/header.png");
+  background-size: cover;
+  height: 80px;
+  border: 3px #012C59;
+z-index: 999;
+}
+
+#header_list{
+  margin-left: 50px;
+  width: 300px;
+  height: 90px;
+  display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#mapContainer {
+  z-index: 1;
+  position: fixed !important;
+  top: 80px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 60%;
+  height: 100% !important;    
+}
+
+
+#info-box {
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  /* padding : 50px; */
+  right: 0px;
+  background: #22D192;
+  /* color: white; */
+  border: 3px #012C59;
+  /* border-width: 3px; */
+  padding : 5vw;
+}
+
+/*맵박스 로고 가리기*/
+.mapbox-logo{ 
+    display: none; 
+  }
+  .mapboxgl-ctrl-logo { 
+    display: none !important; 
+  } 
+  .mapbox-improve-map { 
+    display: none; 
+  } 
+  .mapboxgl-ctrl-compass { 
+    display: none; 
+  }
+
+
+
+
+
+h1 {
+  font-family: 'helvetica', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  /* padding: 10px; */
+  margin: 0;
+}
+
+
+/*마커 디자인*/
+.marker {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/484/484167.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .mapboxgl-popup {
+    max-width: 200px;
+  }
+  .mapboxgl-popup-close-button {
+    color: black;
+  }
+  
+  .mapboxgl-popup-content {
+    text-align: left;
+    font-family: 'helvetica', sans-serif;
+    background-color: #22D192;
+    /* color: white; */
+    border-radius: 0;
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  .mapboxgl-popup-tip {
+      width: 0px !important;
+      border: 0px !important;
+      height: 0px !important;
+    }
+  
