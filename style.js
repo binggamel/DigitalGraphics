@@ -52,7 +52,7 @@ const geojson = {
       
 
 const map = new mapboxgl.Map({
-style: 'mapbox://styles/binggamel/cl8dwn4nj000m14n55g5kmrwp',
+style: 'mapbox://styles/binggamel/cl9rwz30i000614o5krh77r6a',
 center: [126.9772,37.5840],
 // zoom: 15.5,
 // pitch: 45,
